@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "abk",
+      "username": "abk45",
+      "email": "abk23@gmail.com",
+      "phone": "89789",
+      "id": 1
+    },
+    {
+      "name": "Abhishekh Kumar",
+      "username": "abk24",
+      "email": "abhish@gmail.com",
+      "phone": "96718569",
+      "id": 2
+    },
+    {
+      "name": "asdcas",
+      "username": "dsad",
+      "email": "asd@gmail.com",
+      "phone": "65765765",
+      "id": 3
+    }
+  ]
+}

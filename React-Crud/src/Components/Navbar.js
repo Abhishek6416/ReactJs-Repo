@@ -9,6 +9,8 @@ const Header=styled(AppBar)`
 const Tabs=styled(NavLink)`
 margin-right:40px;
 font-size:20px;
+color:inherit;
+text-decoration:none;
 `
 
 export default function Navbar() {
