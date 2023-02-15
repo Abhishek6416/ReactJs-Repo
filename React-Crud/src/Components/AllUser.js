@@ -21,8 +21,8 @@ export default function AllUser() {
 
         let response=await getuser();
         
-        console.log(response)
-        setUsers(response.data)
+        // console.log(response)
+        // setUsers(response.data)
         
     }
 
