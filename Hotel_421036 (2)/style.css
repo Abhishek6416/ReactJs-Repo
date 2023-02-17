@@ -1,0 +1,28 @@
+/* Write your styles here */
+#container{
+    display:flex;
+    width:80%;
+    margin:auto;
+}
+#container >div{
+    width:30%;
+    margin:auto;
+    margin-top: 35px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color:red;
+    font-size: 50px;
+
+}
+.des{
+    text-align: center;
+    line-height: 25px;
+    width:40%;
+    margin:auto;
+    margin-top: 30px;
+     /* text-align: justify;  */
+    
+
+}
