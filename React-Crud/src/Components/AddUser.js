@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { FormGroup,FormControl, Typography, InputLabel, Input, Button,styled } from '@mui/material'
 import { adduser } from './apiService/api'
-import { Navigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const Container=styled(FormGroup)`
 width:50%;
@@ -23,6 +23,8 @@ const initValues={
 export default function AddUser() {
     const [user,setUser]=useState(initValues)
 
+    const navigate=useNavigate();
+
 
     const handleChange =(e)=>{
         // console.log(e.target.name,e.target.value)
@@ -36,6 +38,7 @@ export default function AddUser() {
     const handleClick =async ()=>{
 
       await  adduser(user);
+      navigate('/all')
      
 
     }

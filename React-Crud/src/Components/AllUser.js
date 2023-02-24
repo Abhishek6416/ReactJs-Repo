@@ -9,6 +9,28 @@ import { getuser } from './apiService/api'
 // margin:1% auto 0 auto;
 // `
 
+const Teble=styled(Table)`
+width:90%;
+margin:50px auto 0 auto;
+
+`
+
+// inside table head in html tablecell=thead
+const Thead=styled(TableRow)`
+background:black;
+& > th{
+    color:white;
+    font-size:20px;
+}
+`
+// inside table body  in html tablecell=tbody
+const Tbody=styled(TableRow)`     
+& > td{
+
+    font-size:20px;
+}
+`
+
 export default function AllUser() {
     const [users,setUsers]=useState([])
 
@@ -30,16 +52,16 @@ export default function AllUser() {
   return (
     <div>
 
-    <Table>
+    <Teble>
     <TableHead>
-     <TableRow>
+     {/* <TableRow> */} <Thead>
     <TableCell>ID</TableCell>
     <TableCell>Name</TableCell>
     <TableCell>Username</TableCell>
     <TableCell>Email</TableCell>
     <TableCell>Phone</TableCell>
 
-</TableRow>
+</Thead>
 </TableHead>
 <TableBody>
 {
@@ -69,7 +91,7 @@ export default function AllUser() {
 
 
 
-    </Table>
+    </Teble>
 
 
 
