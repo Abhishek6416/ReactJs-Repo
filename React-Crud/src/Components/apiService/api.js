@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const Url='http://localhost:3002/users'
+const Url='http://127.0.0.1:3005/users'
 
 export const adduser =async(data)=>{
 

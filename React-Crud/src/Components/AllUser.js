@@ -4,10 +4,10 @@ import { Table,TableHead,TableBody,TableRow,TableCell,styled } from '@mui/materi
 import { getuser } from './apiService/api'
 
 
-const Tebble=styled(Table)`
-width:90%;
-margin:1% auto 0 auto;
-`
+// const Tebble=styled(Table)`
+// width:90%;
+// margin:1% auto 0 auto;
+// `
 
 export default function AllUser() {
     const [users,setUsers]=useState([])
@@ -30,17 +30,17 @@ export default function AllUser() {
   return (
     <div>
 
-    <Tebble>
-<TableHead>
-<TableRow>
-
-
+    <Table>
+    <TableHead>
+     <TableRow>
     <TableCell>ID</TableCell>
     <TableCell>Name</TableCell>
     <TableCell>Username</TableCell>
     <TableCell>Email</TableCell>
     <TableCell>Phone</TableCell>
+
 </TableRow>
+</TableHead>
 <TableBody>
 {
 
@@ -68,8 +68,8 @@ export default function AllUser() {
 
 
 
-</TableHead>
-    </Tebble>
+
+    </Table>
 
 
 
