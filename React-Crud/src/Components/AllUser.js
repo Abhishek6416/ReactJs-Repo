@@ -17,7 +17,7 @@ margin:50px auto 0 auto;
 
 // inside table head in html tablecell=thead
 const Thead=styled(TableRow)`
-background:blue;
+background:black;
 & > th{
     color:white;
     font-size:20px;
