@@ -43,8 +43,8 @@ export default function AllUser() {
 
         let response=await getuser();
         
-        console.log(response)
-        setUsers(response.data)
+        // console.log(response)
+        setUsers(response.data);
         
     }
 
@@ -67,34 +67,17 @@ export default function AllUser() {
 {
 
     users.map(elem =>(
-        <TableRow>
+        <Tbody>
         <TableCell>{elem.id}</TableCell>
     <TableCell>{elem.name}</TableCell>
     <TableCell>{elem.username}</TableCell>
     <TableCell>{elem.email}</TableCell>
     <TableCell>{elem.phone}</TableCell>
-
-
-        </TableRow>
-
-
-
+        </Tbody>
     ))
 }
-
-
-
-
 </TableBody>
-
-
-
-
-
-    </Teble>
-
-
-
-    </div>
+   </Teble>
+       </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { FormGroup,FormControl, Typography, InputLabel, Input, Button,styled } from '@mui/material'
 import { adduser } from './apiService/api'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Container=styled(FormGroup)`
 width:50%;
