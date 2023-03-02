@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState ,useEffect} from 'react'
-import { Table,TableHead,TableBody,TableRow,TableCell,styled } from '@mui/material'
+import { Table,TableHead,TableBody,TableRow,TableCell,styled,Button } from '@mui/material'
 import { getuser } from './apiService/api'
+import { Link } from 'react-router-dom'
 
 
 // const Tebble=styled(Table)`
@@ -43,7 +44,7 @@ export default function AllUser() {
 
         let response=await getuser();
         
-        // console.log(response)
+        console.log(response)
         setUsers(response.data);
         
     }
@@ -60,6 +61,7 @@ export default function AllUser() {
     <TableCell>Username</TableCell>
     <TableCell>Email</TableCell>
     <TableCell>Phone</TableCell>
+    <TableCell></TableCell>
 
 </Thead>
 </TableHead>
@@ -73,6 +75,10 @@ export default function AllUser() {
     <TableCell>{elem.username}</TableCell>
     <TableCell>{elem.email}</TableCell>
     <TableCell>{elem.phone}</TableCell>
+    <TableCell>
+        <Button variant="contained" color="secondary" style={{marginRight:"10px"}} component={Link} to={`/edit/${elem.id}`}>EDIT</Button>
+        <Button variant="contained">DELETE</Button>
+    </TableCell>
         </Tbody>
     ))
 }
