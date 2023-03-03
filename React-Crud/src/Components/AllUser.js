@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState ,useEffect} from 'react'
 import { Table,TableHead,TableBody,TableRow,TableCell,styled,Button } from '@mui/material'
-import { getuser } from './apiService/api'
+import { getusers,deleteuser } from './apiService/api'
 import { Link } from 'react-router-dom'
 
 
@@ -42,12 +42,17 @@ export default function AllUser() {
   
     const getuserdetails =async() => {
 
-        let response=await getuser();
+        let response=await getusers();
         
         console.log(response)
         setUsers(response.data);
         
     }
+
+    const handleDelete=async(id)=>{
+        await deleteuser(id);
+        getuserdetails();
+}
 
 
   return (
@@ -77,7 +82,7 @@ export default function AllUser() {
     <TableCell>{elem.phone}</TableCell>
     <TableCell>
         <Button variant="contained" color="secondary" style={{marginRight:"15px"}} component={Link} to={`/edit/${elem.id}`}>EDIT</Button>
-        <Button variant="contained">DELETE</Button>
+        <Button variant="contained" onClick={()=>handleDelete(elem.id)}>DELETE</Button>
     </TableCell>
         </Tbody>
     ))

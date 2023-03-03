@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
+import { useEffect } from 'react'
 import { FormGroup,FormControl, Typography, InputLabel, Input, Button,styled } from '@mui/material'
-import { adduser } from './apiService/api'
-import { useNavigate } from 'react-router-dom'
+import { getuser ,edituser} from './apiService/api'
+import { useNavigate,useParams } from 'react-router-dom'
 
 const Container=styled(FormGroup)`
 width:50%;
@@ -24,6 +25,26 @@ export default function EditUser() {
     const [user,setUser]=useState(initValues)
 
     const navigate=useNavigate();
+    const {id}=useParams();
+
+    useEffect(()=>{
+
+      getUserData();
+
+
+    },[])
+
+ 
+    // useEffect
+    const getUserData=async()=>{
+      let response =await getuser(id);
+      console.log(response)
+      setUser(response.data)
+
+      
+
+
+    }
 
 
     const handleChange =(e)=>{
@@ -37,7 +58,7 @@ export default function EditUser() {
 
     const handleClick =async ()=>{
 
-      await  adduser(user);
+      await edituser(user,id);
       navigate('/all')
      
 
@@ -47,28 +68,36 @@ export default function EditUser() {
     <Container>
     <Typography variant='h3'>EDIT USER</Typography>
 
+{/* now we want the state data inside this input fields in form component value attribute is used to controlled components
+now 1-->if the value field is controlled by the input field that is whatever data we can add that is uncontrolled components
 
+
+
+now2--> if the value field controls the input field that whatever data we want to edit we will open that and edit it that is value is 
+controlling the input field then it is called controlled components
+
+ */}
     <FormControl>
     <InputLabel>Name</InputLabel>
-    <Input onChange={handleChange} name="name"/>
+    <Input onChange={handleChange} name="name" value={user.name}/>
     </FormControl>
 
 
     <FormControl>
     <InputLabel>UserName</InputLabel>
-    <Input onChange={handleChange}   name="username"/>
+    <Input onChange={handleChange}   name="username" value={user.username}/>
     </FormControl>
 
 
     <FormControl>
     <InputLabel>Email</InputLabel>
-    <Input onChange={handleChange}   name="email"/>
+    <Input onChange={handleChange}   name="email" value={user.email}/>
     </FormControl>
 
 
     <FormControl>
     <InputLabel>Phone</InputLabel>
-    <Input onChange={handleChange}   name="phone"/>
+    <Input onChange={handleChange}   name="phone" value={user.phone}/>
     </FormControl>
 
 

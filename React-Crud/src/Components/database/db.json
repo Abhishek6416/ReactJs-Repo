@@ -1,32 +1,39 @@
 {
   "users": [
     {
-      "name": "abk",
-      "username": "abk45",
-      "email": "abk23@gmail.com",
-      "phone": "89789",
+      "name": "Abhishekh Kumar",
+      "username": "Abhi416",
+      "email": "abhi6@gmail.com",
+      "phone": "569",
       "id": 1
     },
     {
-      "name": "Abhishh Kumar",
-      "username": "0718098",
-      "email": "abhish416@gmail.com",
-      "phone": "6718569",
-      "id": 5
-    },
-    {
-      "name": "anjali mandal",
-      "username": "asnkjaskjn",
+      "name": "anjali mondAL",
+      "username": "anju78",
       "email": "anjuuu232gmail.com",
-      "phone": "23423432432",
-      "id": 6
+      "phone": "8569",
+      "id": 2
     },
     {
-      "name": "furki bro",
-      "username": "furki broooooooo",
-      "email": "furkibro23@gmail.com",
-      "phone": "234242",
-      "id": 7
+      "name": "yo yo honey singhaaaaaaaa",
+      "username": "abh657",
+      "email": "ab6@gmail.com",
+      "phone": "324235",
+      "id": 3
+    },
+    {
+      "name": "furki brooo",
+      "username": "furki78",
+      "email": "furki456@gmail.com",
+      "phone": "345345",
+      "id": 4
+    },
+    {
+      "name": "yo yo abhishekh singhaaaaaaa",
+      "username": "singhaaabhi89",
+      "email": "singhabhi234@gmail.com",
+      "phone": "235345",
+      "id": 5
     }
   ]
 }

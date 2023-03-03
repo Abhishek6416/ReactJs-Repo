@@ -14,7 +14,7 @@ export const adduser =async(data)=>{
 }
 
 
-export const getuser = async()=>{
+export const getusers = async()=>{
 
     try {
         return await axios.get(Url);
@@ -22,5 +22,40 @@ export const getuser = async()=>{
     } catch (error) {
         console.log(error.message)
         
+    }
+}
+export const getuser=async(data)=>{
+
+    try{
+
+        return await axios.get(`${Url}/${data}`)
+
+    }
+    catch(error){
+        console.log(error.message)
+
+    }
+}
+
+export const edituser=async(data,id)=>{
+
+    try{
+
+        return await axios.put(`${Url}/${id}`,data)
+
+    }
+    catch(error){
+        console.log(error.message)
+    }
+}
+
+export const deleteuser=async(id)=>{
+
+    try{
+        return await axios.delete(`${Url}/${id}`)
+
+    }
+    catch(error){
+        console.log(error.message)
     }
 }
