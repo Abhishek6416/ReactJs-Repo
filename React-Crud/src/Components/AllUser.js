@@ -81,7 +81,7 @@ export default function AllUser() {
     <TableCell>{elem.email}</TableCell>
     <TableCell>{elem.phone}</TableCell>
     <TableCell>
-        <Button variant="contained" color="secondary" style={{marginRight:"15px"}} component={Link} to={`/edit/${elem.id}`}>EDIT</Button>
+        <Button variant="contained" color="secondary" style={{marginRight:"10px"}} component={Link} to={`/edit/${elem.id}`}>EDIT</Button>
         <Button variant="contained" onClick={()=>handleDelete(elem.id)}>DELETE</Button>
     </TableCell>
         </Tbody>
