@@ -44,7 +44,7 @@ export default function AllUser() {
 
         let response=await getusers();
         
-        console.log(response)
+        // console.log(response)
         setUsers(response.data);
         
     }
