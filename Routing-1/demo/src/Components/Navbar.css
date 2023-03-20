@@ -1,0 +1,10 @@
+.Nav{
+    background-color: black;
+    padding:40px;
+   text-align: right;
+}
+a{
+    color:aliceblue;
+    margin-right: 30px;
+    text-decoration: none;
+}
