@@ -1,10 +1,10 @@
 .Nav{
     background-color: black;
-    padding:40px;
+    padding:30px;
    text-align: right;
 }
 a{
     color:aliceblue;
-    margin-right: 30px;
+    margin-right: 40px;
     text-decoration: none;
 }
