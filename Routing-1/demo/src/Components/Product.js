@@ -4,7 +4,7 @@ export default function Product() {
   return (
     <div>
 
-      <div>left</div>
+      <div>leftside</div>
       <div>right</div>
     </div>
   )
