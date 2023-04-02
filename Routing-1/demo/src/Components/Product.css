@@ -1,0 +1,35 @@
+.main{
+
+    margin: 50px auto;
+  box-shadow: 0 0 10px black;
+    height: 350px;
+    width:1000px;
+    /* border: 2px solid red; */
+}
+
+/* .main >div:nth-child(1){
+
+    width:30%;
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+} */
+
+.main1{
+
+    width:30%;
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+.main >div:nth-child(2){
+    width: 70%;
+    background-color: red;
+}
