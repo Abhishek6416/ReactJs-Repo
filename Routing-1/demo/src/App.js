@@ -9,6 +9,8 @@ import Todo from './Components/Todo';
 import { BrowserRouter } from 'react-router-dom';
 import { Route,Routes } from 'react-router-dom';
 import PageNotFound from './Components/PageNotFound';
+import Electronics from './Components/Electronics';
+import Jewelery from './Components/Jewelery';
 function App() {
   return (
     <div className="App">
@@ -17,10 +19,18 @@ function App() {
       <Route path='/' element={<Home/>}/>
 
       <Route path='/counter' element={<Counter/>}/>
-      <Route path='/product' element={<Product/>}/>
       <Route path='/profile' element={<Profile/>}/>
       <Route path='/todo' element={<Todo/>}/>
       <Route path='*' element={<PageNotFound/>}/>
+      
+
+      <Route path='/product' element={<Product/>}>
+     <Route path='electronics' element={<Electronics/>}/>
+     <Route path='jewelery' element={<Jewelery/>}/>
+
+           
+      </Route>
+      
       
         
 

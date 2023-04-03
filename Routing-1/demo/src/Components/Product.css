@@ -4,6 +4,7 @@
   box-shadow: 0 0 10px black;
     height: 350px;
     width:1000px;
+    display: flex;
     /* border: 2px solid red; */
 }
 
@@ -31,5 +32,5 @@
 }
 .main >div:nth-child(2){
     width: 70%;
-    background-color: red;
+    /* background-color: red; */
 }
