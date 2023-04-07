@@ -66,7 +66,7 @@ export default function EditUser() {
   return (
     <div>
     <Container>
-    <Typography variant='h3'>EDIT USER</Typography>
+    <Typography variant='h2'>EDIT USER</Typography>
 
 {/* now we want the state data inside this input fields in form component value attribute is used to controlled components
 now 1-->if the value field is controlled by the input field that is whatever data we can add that is uncontrolled components
