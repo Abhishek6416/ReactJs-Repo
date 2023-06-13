@@ -23,7 +23,7 @@ export const getusers = async()=>{
         console.log(error.message)
         
     }
-}
+} 
 export const getuser=async(data)=>{
 
     try{

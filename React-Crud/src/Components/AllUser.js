@@ -63,7 +63,7 @@ export default function AllUser() {
      {/* <TableRow> */} <Thead>
     <TableCell>ID</TableCell>
     <TableCell>Name</TableCell>
-    <TableCell>Username</TableCell>
+    <TableCell>Usernames</TableCell>
     <TableCell>Email</TableCell>
     <TableCell>Phone</TableCell>
     <TableCell></TableCell>

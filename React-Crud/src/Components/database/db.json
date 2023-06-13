@@ -1,21 +1,7 @@
 {
   "users": [
     {
-      "name": "Abhishekh Kumar",
-      "username": "Abhi416",
-      "email": "abhi6@gmail.com",
-      "phone": "569",
-      "id": 1
-    },
-    {
-      "name": "anjali mondAL",
-      "username": "anju78",
-      "email": "anjuuu232gmail.com",
-      "phone": "8569",
-      "id": 2
-    },
-    {
-      "name": "yo yo honey singhaaaaaaaa",
+      "name": "yo yo honey singha",
       "username": "abh657",
       "email": "ab6@gmail.com",
       "phone": "324235",
@@ -34,6 +20,20 @@
       "email": "singhabhi234@gmail.com",
       "phone": "235345",
       "id": 5
+    },
+    {
+      "name": "Abhis Kumar",
+      "username": "108",
+      "email": "abh6@gmail.com",
+      "phone": "06",
+      "id": 6
+    },
+    {
+      "name": "Abhishekh Kumar",
+      "username": "6@gmail.com",
+      "email": "ab416@gmail.com",
+      "phone": "8569",
+      "id": 7
     }
   ]
 }

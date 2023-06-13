@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
    <Header position='static'>
    <Toolbar>
-   <Tabs to="/" >CodeForInterview</Tabs >
+   <Tabs to="/" >Home</Tabs >
    <Tabs to="/all" >AllUser</Tabs >
    <Tabs to="/user">AddUser</Tabs >
   
