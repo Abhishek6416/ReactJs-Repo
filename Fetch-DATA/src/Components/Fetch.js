@@ -22,7 +22,7 @@ export default function Fetch() {
         <button onClick={handleEvent}>get data</button>
 
         {
-            state.map((elem)=>{
+            state.map((elem,i)=>{
 
                 return(
 
