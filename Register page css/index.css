@@ -1,0 +1,58 @@
+.mainContainer{
+    width: 350px;
+    /* border: 2px solid red; */
+    padding:20px;
+    /* align-items: center; this property works on display flex */
+    text-align: center;
+
+    margin: 50px auto;
+    box-shadow: 0 0 10px gray;
+    padding-bottom: 30px;
+
+
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    
+}
+input{
+    padding: 10px;
+    outline: none;
+    border: 2px solid rgb(196, 190, 190);
+    font-weight: 600;
+    border-radius: 5px;
+    
+    
+}
+
+/* input[type="submit"]{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+} */
+
+button{
+    background-color: rgb(134, 134, 241);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    padding:10px;
+    
+
+}
+
+button:nth-of-type(2){
+    background-color: red;
+}
+p{
+    margin:0
+}
